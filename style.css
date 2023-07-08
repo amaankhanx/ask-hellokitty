@@ -1,0 +1,24 @@
+.button {
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    background-color: #0c580f; /* Green */
+    color: rgb(38, 96, 23);
+  }
+
+  body{
+    background-image: url("https://i.pinimg.com/564x/ff/dc/13/ffdc1324011e7a1ce5b1ac8364998d3c.jpg");
+background-repeat:no-repeat;
+background-size: 60%;
+    
+    
+
+  }
+
+  h1{
+    font-family: Monospace;
+    font-size:larger;
+    font-stretch: normal;
+    
+  }

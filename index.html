@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All About You JAATHI</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    function runProgram() {
+      // Define the available choices
+      var greetings = ["Hey there, partner in righteousness! Wishing you a day as smooth and savvy as Saul Goodman himself. Keep slippin' and slidin' through life!",
+
+"Greetings, legal mastermind! Just a friendly reminder that you have the skills to spin any situation in your favor. Stay sharp and keep rockin' that Saul Goodman charm!",
+
+"Hello, master of the art of persuasion! May your day be filled with clever schemes, quick thinking, and the audacity to make the impossible possible. You're a true Saul Goodman!",
+
+"Hey, smooth-talking genius! Remember, the world is your courtroom, and you have the power to win any case. Keep channeling that Saul Goodman swagger and slay the day!",
+
+"Greetings, connoisseur of creative problem-solving! Embrace your inner Saul Goodman and find unique ways to navigate through life's challenges. You've got that Goodman touch!",
+
+"Hello, legal wizard! May your day be as cunning and calculated as a Saul Goodman scheme. Never underestimate your ability to turn the tables and come out on top!",
+
+"Hey there, legal extraordinaire! Just a friendly reminder to always have a trick up your sleeve and a witty one-liner at the ready. Keep rocking that Saul Goodman attitude!",
+
+"Greetings, master of legal loopholes! Your ability to find unconventional solutions is truly admirable. Keep harnessing that Saul Goodman brilliance and make every day a legal adventure!",
+
+"Hello, legal maestro! Remember, there's always a way to bend the rules in your favor. Embrace your inner Saul Goodman and orchestrate your own legal symphony!",
+
+"Hey, legal magician! May your day be filled with sleight of hand maneuvers, razor-sharp wit, and a touch of Saul Goodman magic. You've got the power to make legal miracles happen!"]
+
+      var compliments = ["I must be a photographer because every time I see you, you make my heart shutter.",
+
+"You're like a dictionary because you add meaning to my life.",
+
+"You're a walking work of art, and I can't help but stare in awe.",
+
+"If we were fonts, you'd definitely be the bold one. You make a statement wherever you go.",
+
+"You must be a magician because every time I look at you, everyone else disappears.",
+
+"Are you a time traveler? Because every time I see you, my day gets better.",
+
+"You're the missing piece to my puzzle. Together, we make a perfect fit.",
+
+"You must be a star because your radiance lights up my world.",
+
+"You're so sweet, you could give Willy Wonka a run for his money.",
+
+"You're a ray of sunshine in a world full of cloudy days. Keep shining!"]
+
+      var jokes = ["Why don't eggs tell jokes? Because they might crack up!",
+
+"Did you hear about the restaurant on the moon? Great food, no atmosphere!",
+
+"Why don't skeletons fight each other? They don't have the guts!",
+
+"What do you call a fish wearing a crown? King of the sea-weed!",
+
+"Why did the scarecrow win an award? Because he was outstanding in his field!",
+
+"I used to play piano by ear, but now I use my hands.",
+
+"What do you call a bear with no teeth? A gummy bear!",
+
+"How do you organize a space party? You 'planet!'",
+
+"Why did the bicycle fall over? It was two-tired!",
+
+"How do you catch a squirrel? Climb a tree and act like a nut!"]
+
+      // Get the user's choice
+      var choice = document.getElementById("choice").value;
+
+      // Get the output element
+      var output = document.getElementById("output");
+
+      // Process the user's choice
+      if (choice === "1") {
+        output.textContent = greetings[Math.floor(Math.random() * greetings.length)];
+      } else if (choice === "2") {
+        output.textContent = compliments[Math.floor(Math.random() * compliments.length)];
+      } else if (choice === "3") {
+        output.textContent = jokes[Math.floor(Math.random() * jokes.length)];
+      } else {
+        output.textContent = "Invalid choice. Please select a valid option (1, 2, or 3).";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>All About you</h1>
+
+  <label for="choice">um oi! choose an option:</label>
+  <select id="choice">
+    <option value="1">greet</option>
+    <option value="2">compliment</option>
+    <option value="3">tell a joke</option>
+  </select>
+
+  <button onclick="runProgram()">meow</button>
+
+  <p id="output"></p>
+</body>
+</html>
